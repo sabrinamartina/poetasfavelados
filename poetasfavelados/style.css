@@ -14,7 +14,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
-	font-family:"", helvetica,arial; 
+	/*font-family:"", helvetica,arial; */
 }
 header {
 	width: 100%;
@@ -36,28 +36,48 @@ header {
 .menu {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	height: 30px;
+	align-items: flex-end;
+	height: 400px;
 	width: 100%;
-
+	background:url(banner.jpg);
+	background-repeat: no-repeat; 
 }
 .menu ul {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	background:#717171;
+	align-items: flex-end;
+	background: rgba(100, 0, 120, 0.7);
+	/*padding: 10px;*/
 	width: 100%;
 	border-radius: 0px 0px 5px 5px;
-	/*height: 30px;*/
-
+	height: 40px;
+	position: relative;
 }
 .menu ul li {
 	display: inline;
+	/*display: flex;
+	align-items: flex-end;*/
 	/*height: 30px;*/
-	margin: 0px 5px;
-	padding: 10px 20px;
-	background: gray;	
+	/*margin: 0px 5px;*/
+	padding: 10px 25px;
+	/*background: rgba(100, 0, 120, 0.7);*/
+	border-radius: 20px;
+	border: solid 1px #fff;
+}
+.menu ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.menu ul li:hover {
+	height: 20px;
+	/*margin: 0px 5px;*/
+	padding: 10px 25px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
 
+}
+.menu ul li:hover a{
+	color: #000;
 }
 img {
 width:300px;
@@ -98,7 +118,29 @@ h1{
 	align-items: flex-start;
 	justify-content: center;
 }
+/*.div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 90%;
+	height: 100%;
+}*/
+#gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	/*padding: 10px;*/
+	align-items: center;
 
+}
+.ft-gallery {
+	height: 150px;
+	/*align-self: flex-start;*/
+	margin: 5px;
+}
 
 
 
